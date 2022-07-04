@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="./main.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+</head>
+<body>
+    <div id="todo">
+        <div class="todo__header">
+            <div>
+                <div class="date">Thursday, 26th</div>
+                <div class="month">April</div>
+            </div>
+            <div class="total-task">
+                3 Tasks
+            </div>
+        </div>
+        <div class="todo__navbar">
+            <ul>
+                <li class="selected link" id="All">All</li>
+                <li class="link" id="Pending">Pending</li>
+                <li class="link" id="Completed">Completed</li>
+            </ul>
+            <button type="submit" id="btnClear">
+                Clear All
+            </button>
+        </div>
+        <div class="todo__container">
+            <ul class="todo__container__list__task">
+                <!-- <li class="todo__container__input">
+                    <div class="task">
+                        <i class="fa-solid fa-bars task-drag"></i>
+                        <input id="task1" type="checkbox" class="taskCheck">
+                        <label for="task1">Create post for instagram</label>
+                    </div>
+                    <div class="dropdown">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <ul class="menu">
+                            <li>Edit</li>
+                            <li>Remove</li>
+                            <li>Move down</li>
+                        </ul>                        
+                    </div>
+                </li>
+                <li class="todo__container__input">
+                    <div class="task">
+                        <i class="fa-solid fa-bars task-drag"></i>
+                        <input id="task2" type="checkbox" class="taskCheck">
+                        <label for="task2">Renew Gym Membership</label>
+                    </div>
+                    <div class="dropdown">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <ul class="menu">
+                            <li>Edit</li>
+                            <li>Remove</li>
+                            <li>Move up</li>
+                            <li>Move down</li>
+                        </ul>    
+                    </div>
+                </li>
+                <li class="todo__container__input">
+                    <div class="task">
+                        <i class="fa-solid fa-bars task-drag"></i>
+                        <input id="task3" type="checkbox" class="taskCheck">
+                        <label for="task3">Paying electricity bill</label>
+                    </div>
+                    <div class="dropdown">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <ul class="menu">
+                            <li>Edit</li>
+                            <li>Remove</li>
+                            <li>Move up</li>
+                        </ul>    
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="todo___action">
+            <input type="text" placeholder="Enter Your Task" id="inputText"/>
+            <button class="button" type="submit" id="btnAdd"><i class="fa-solid fa-plus"></i></button>
+            <button class="button" type="submit" id="btnSave" style="display: none;"><i class="fa-solid fa-floppy-disk"></i></button>
+        </div>
+    </div>
+</body>
+</html>

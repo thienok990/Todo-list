@@ -1,0 +1,201 @@
+html, body{
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+}
+#todo{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    font-size: 1.6rem;
+    width: 40rem;
+    height: 50rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: -5px 5px 15px rgb(0 0 0 / 50%);
+}
+
+.todo__header{
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+}
+
+.todo__header .date{
+    font-size: 2rem;
+    color: #7177A8;
+    margin-bottom: 1rem;
+}
+
+.todo__header .month{
+    color: #909090;
+}
+
+.todo__header .total-task{
+    font-size: 1.8rem;
+    color: #909090;
+}
+
+.todo__navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+    background-color: #F6F6F6;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.todo__navbar ul{
+    padding: 0;
+}
+
+.todo__navbar ul li{
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+.todo__navbar li.selected{
+    text-decoration: underline;
+}
+.todo__navbar ul li:not(:first-child){
+    margin-left: 1rem;
+}
+
+.todo__navbar button{
+    background-color: #5D73E4;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #5D73E4;
+    box-shadow: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+.todo__navbar button:hover{
+    background-color: #2b49df;
+    border-color: #2b49df;
+}
+
+.todo__container{
+    /* padding: 1rem 3rem; */
+    overflow-y: scroll;
+}
+
+.todo__container .task label.checked{
+    text-decoration: line-through;
+}
+
+.todo__container > ul > li{
+    padding: 1rem 3rem;
+    list-style: none;
+    border-bottom: 1px solid #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo__container > ul > li .task{
+    display: flex;
+    align-items: center;
+}
+
+.todo__container > ul > li .task .task-drag{
+    cursor: move;
+}
+
+.todo__container > ul > li .task input[type=checkbox]{
+    margin: 5px;
+}
+
+.todo__container ul li .dropdown{
+    cursor: pointer;
+    position: relative;
+
+}
+
+.todo__container .dropdown:hover .menu{
+    /* display: block; */
+    visibility: visible;
+}
+
+.todo__container .dropdown .menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+    background-color: white;
+    /* display: none; */
+    width: 10rem;
+    box-shadow: 0 0 10px 0;
+    z-index: 999;
+    visibility: hidden;
+}
+
+.todo__container .dropdown .menu:before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+}
+
+.todo__container .dropdown .menu li{
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.todo__container .dropdown .menu li:hover{
+    background-color: #eee;
+}
+
+.todo__container .dropdown .menu li:not(:last-child){
+    border-bottom: 1px solid black;
+}   
+
+.todo__container ul{
+    padding: 0;
+    margin: 0;
+}
+
+.todo___action{
+    padding: 1rem 3rem;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+}
+
+.todo___action input{
+    padding: 10px 20px;
+    width: calc(100% - 7rem);
+    border: 1px solid #eee;
+    border-radius: 20px;
+}
+
+.todo___action .button{
+    border-radius: 50%;
+    background-color: #FB7272;
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.todo___action .button:hover{
+    background-color: #ee2c2c;
+}
+
+
+
+
+
